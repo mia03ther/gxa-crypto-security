@@ -50,6 +50,7 @@
 
 ## 其他资料
 
+- [Fork 自学练习](supplemental/)（第 2、3 讲补充）
 - [签名与密钥安全检查清单](checklist.md)
 - [案例核对表](docs/case-verification.md)：每个事故的核对结果和来源链接
 - [币安 2026 事件链上数据核对](docs/binance-onchain.md)
