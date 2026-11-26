@@ -1,0 +1,15 @@
+name: grade
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      # 仓库里的 exercise/ 是空白练习，CI 只检查参考答案能通过判分
+      - run: GXA_SOLUTION=1 uv run pytest

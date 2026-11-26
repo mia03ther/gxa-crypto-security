@@ -1,0 +1,17 @@
+[project]
+name = "gxa-crypto-security"
+version = "0.1.0"
+description = "GXA 密码学 × 安全公开课：演示代码与练习"
+requires-python = ">=3.11"
+dependencies = [
+    "pycryptodome>=3.20",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
